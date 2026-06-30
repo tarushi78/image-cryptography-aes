@@ -16,7 +16,7 @@ Encrypts and decrypts images using AES-128 in CBC mode — implemented from scra
 ## 📂 Files
 | File | Purpose |
 |------|---------|
-| `aes.cpp/h` | AES-128 encryption/decryption core |
+| `aes.h` | AES-128 encryption/decryption core |
 | `Encrypt.cpp/h` | Encryption module |
 | `sender.cpp/h` | TCP sender |
 | `receiver.cpp/h` | TCP receiver |
@@ -37,7 +37,7 @@ Encrypts and decrypts images using AES-128 in CBC mode — implemented from scra
 > Tested on Windows with MinGW-w64 and MySQL 8.0
 
 ```bash
-g++ main_desktop.cpp aes.cpp sender.cpp receiver.cpp database.cpp gui_glut.cpp -o ImageCrypto -lws2_32 -lmysqlclient -lgdi32
+g++ main_desktop.cpp sender.cpp receiver.cpp database.cpp gui_glut.cpp -o ImageCrypto -lws2_32 -lmysqlclient -lgdi32
 ./ImageCrypto
 ```
 
